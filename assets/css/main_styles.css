@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.converter-wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box; /* Important for padding */
+}
+
+input::placeholder, select {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+select option {
+    background: #5f4b8b;
+    color: #fff;
+}
+
+.currency-selectors {
+    display: flex;
+    gap: 20px;
+}
+
+.currency-selectors .form-group {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f6d365;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#result-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
